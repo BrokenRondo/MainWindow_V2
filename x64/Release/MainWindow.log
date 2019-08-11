@@ -1,0 +1,50 @@
+﻿  Generate moc_predefs.h
+  Moc'ing mainwindow.h...
+  Moc'ing AddPatient.h...
+  Moc'ing mrichtextedit.h...
+  Moc'ing mtextedit.h...
+  Moc'ing login.h...
+  Moc'ing rcode.h...
+  AddPatient.cpp
+  Global.cpp
+  json_reader.cpp
+  json_value.cpp
+  json_writer.cpp
+  login.cpp
+  main.cpp
+  mainwindow.cpp
+c:\users\msi-\desktop\mainwindow_v2\global.cpp(123): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  md5.cpp
+  mrichtextedit.cpp
+  mtextedit.cpp
+  Mutex_Linux.cpp
+c:\users\msi-\desktop\mainwindow_v2\md5.cpp(115): warning C4267: “参数”: 从“size_t”转换到“MD5::size_type”，可能丢失数据
+c:\users\msi-\desktop\mainwindow_v2\login.h(11): fatal error C1083: 无法打开包括文件: “Python.h”: No such file or directory (编译源文件 login.cpp)
+c:\users\msi-\desktop\mainwindow_v2\rcode.h(10): warning C4091: “extern ”: 没有声明变量时忽略“recvrcode”的左侧 (编译源文件 AddPatient.cpp)
+  Mutex_Win32.cpp
+  Semaphore_Linux.cpp
+c:\users\msi-\desktop\mainwindow_v2\login.h(11): fatal error C1083: 无法打开包括文件: “Python.h”: No such file or directory (编译源文件 main.cpp)
+c:\users\msi-\desktop\mainwindow_v2\login.h(11): fatal error C1083: 无法打开包括文件: “Python.h”: No such file or directory (编译源文件 mainwindow.cpp)
+  Semaphore_Win32.cpp
+  Socket.cpp
+  Thread_Linux.cpp
+  Thread_Win32.cpp
+  rcode.cpp
+  UploadThread.cpp
+  qrc_resource.cpp
+  moc_mainwindow.cpp
+  moc_AddPatient.cpp
+c:\users\msi-\desktop\mainwindow_v2\osapi\socket.cpp(242): warning C4244: “参数”: 从“socket_t”转换到“int”，可能丢失数据
+c:\users\msi-\desktop\mainwindow_v2\osapi\socket.cpp(255): warning C4244: “参数”: 从“socket_t”转换到“int”，可能丢失数据
+  moc_mrichtextedit.cpp
+  moc_mtextedit.cpp
+  moc_login.cpp
+  moc_rcode.cpp
+c:\users\msi-\desktop\mainwindow_v2\uploadthread.cpp(18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\msi-\desktop\mainwindow_v2\rcode.h(10): warning C4091: “extern ”: 没有声明变量时忽略“recvrcode”的左侧 (编译源文件 rcode.cpp)
+c:\users\msi-\desktop\mainwindow_v2\rcode.cpp(11): warning C4100: “event”: 未引用的形参
+c:\users\msi-\desktop\mainwindow_v2\rcode.cpp(50): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\msi-\desktop\mainwindow_v2\login.h(11): fatal error C1083: 无法打开包括文件: “Python.h”: No such file or directory (编译源文件 GeneratedFiles\Release\moc_mainwindow.cpp)
+c:\users\msi-\desktop\mainwindow_v2\rcode.h(10): warning C4091: “extern ”: 没有声明变量时忽略“recvrcode”的左侧 (编译源文件 GeneratedFiles\Release\moc_AddPatient.cpp)
+c:\users\msi-\desktop\mainwindow_v2\login.h(11): fatal error C1083: 无法打开包括文件: “Python.h”: No such file or directory (编译源文件 GeneratedFiles\Release\moc_login.cpp)
+c:\users\msi-\desktop\mainwindow_v2\rcode.h(10): warning C4091: “extern ”: 没有声明变量时忽略“recvrcode”的左侧 (编译源文件 GeneratedFiles\Release\moc_rcode.cpp)

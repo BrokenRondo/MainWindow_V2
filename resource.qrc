@@ -1,0 +1,21 @@
+<RCC>
+  <qresource prefix="/new/src">
+    <file>Resources/addPatient.png</file>
+    <file>Resources/HFUT.png</file>
+    <file>Resources/icon.png</file>
+    <file>Resources/newTpl.png</file>
+    <file>Resources/template.png</file>
+    <file>Resources/templateAdd.png</file>
+    <file>Resources/car.png</file>
+    <file>Resources/templateSave.png</file>
+    <file>Resources/templatesUse.png</file>
+    <file>Resources/temperature.png</file>
+    <file>Resources/delete.png</file>
+    <file>Resources/print.png</file>
+    <file>Resources/card.png</file>
+    <file>Resources/tree.png</file>
+    <file>Resources/new.png</file>
+    <file>Resources/save.png</file>
+    <file>Resources/upload.png</file>
+  </qresource>
+</RCC>

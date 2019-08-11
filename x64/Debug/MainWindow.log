@@ -1,0 +1,18 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(MainWindow.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  login.cpp
+  mainwindow.cpp
+c:\users\msi-\desktop\mainwindow_v2\login.cpp(71): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\msi-\desktop\mainwindow_v2\rcode.h(10): warning C4091: “extern ”: 没有声明变量时忽略“recvrcode”的左侧 (编译源文件 mainwindow.cpp)
+c:\users\msi-\desktop\mainwindow_v2\mainwindow.cpp(118): warning C4189: “nowtime”: 局部变量已初始化但不引用
+c:\users\msi-\desktop\mainwindow_v2\mainwindow.cpp(211): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\msi-\desktop\mainwindow_v2\mainwindow.cpp(391): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\msi-\desktop\mainwindow_v2\mainwindow.cpp(394): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\msi-\desktop\mainwindow_v2\mainwindow.cpp(665): warning C4927: 转换非法；隐式应用了多个用户定义的转换
+  c:\users\msi-\desktop\mainwindow_v2\mainwindow.cpp(665): note: 调用构造函数“std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(const _Elem *const )”时
+          with
+          [
+              _Elem=char
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring(2181): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string”的声明
+c:\users\msi-\desktop\mainwindow_v2\mainwindow.cpp(743): warning C4189: “btnNo”: 局部变量已初始化但不引用
+  MainWindow.vcxproj -> C:\Users\msi-\Desktop\MainWindow_V2\debug\MainWindow.exe

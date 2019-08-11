@@ -1,0 +1,4 @@
+1.python3环境并且有MyQR包和os包
+2.数据库64位运行，具体参数看login.cpp，有hospital数据库和doctors表格
+3.Qt64位
+4.不能运行晚上再问，18:20计算机等级考试

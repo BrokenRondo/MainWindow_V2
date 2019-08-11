@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MRichTextEdit</class>
+ <widget class="QWidget" name="MRichTextEdit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>824</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>1</number>
+   </property>
+   <property name="leftMargin">
+    <number>1</number>
+   </property>
+   <property name="topMargin">
+    <number>1</number>
+   </property>
+   <property name="rightMargin">
+    <number>1</number>
+   </property>
+   <property name="bottomMargin">
+    <number>1</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="f_toolbar" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QComboBox" name="f_paragraph">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Paragraph formatting</string>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_undo">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>撤销 (CTRL+Z)</string>
+        </property>
+        <property name="text">
+         <string>Undo</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resources/undo.png</normaloff>Resources/undo.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_redo">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>重做</string>
+        </property>
+        <property name="text">
+         <string>Redo</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resources/redo.png</normaloff>Resources/redo.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_cut">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>剪切(CTRL+X)</string>
+        </property>
+        <property name="text">
+         <string>Cut</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resources/cut.png</normaloff>Resources/cut.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_copy">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>复制 (CTRL+C)</string>
+        </property>
+        <property name="text">
+         <string>Copy</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resources/copy.png</normaloff>Resources/copy.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_paste">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>粘贴 (CTRL+V)</string>
+        </property>
+        <property name="text">
+         <string>Paste</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resources/paste.png</normaloff>Resources/paste.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_link">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>插入超链接 (CTRL+L)</string>
+        </property>
+        <property name="text">
+         <string>Link</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resources/link.png</normaloff>Resources/link.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_bold">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string notr="true">字体加粗 (CTRL+B)</string>
+        </property>
+        <property name="text">
+         <string>Bold</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resources/bold.png</normaloff>Resources/bold.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_italic">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>斜体 (CTRL+I)</string>
+        </property>
+        <property name="text">
+         <string>Italic</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resources/italic.png</normaloff>Resources/italic.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_underline">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>下划线 (CTRL+U)</string>
+        </property>
+        <property name="text">
+         <string>Underline</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resources/underline.png</normaloff>Resources/underline.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_strikeout">
+        <property name="toolTip">
+         <string>删除线</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resources/strikethrough.png</normaloff>Resources/strikethrough.png</iconset>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_list_bullet">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>圆点样式编号(CTRL+-)</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resources/point-order.png</normaloff>Resources/point-order.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_list_ordered">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>序号样式编号 (CTRL+=)</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resources/index-order.png</normaloff>Resources/index-order.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_indent_dec">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>减少缩进(CTRL+,)</string>
+        </property>
+        <property name="text">
+         <string>Decrease indentation</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resources/indent-decrease.png</normaloff>Resources/indent-decrease.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_indent_inc">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>增加缩进 (CTRL+.)</string>
+        </property>
+        <property name="text">
+         <string>Increase indentation</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resources/indent-increase.png</normaloff>Resources/indent-increase.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_fgcolor">
+        <property name="minimumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>字体颜色</string>
+        </property>
+        <property name="text">
+         <string>.</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_bgcolor">
+        <property name="minimumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>背景颜色</string>
+        </property>
+        <property name="text">
+         <string>.</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="f_fontsize">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>字体大小</string>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_image">
+        <property name="toolTip">
+         <string>插入图片</string>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resources/picture.png</normaloff>Resources/picture.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_menu">
+        <property name="text">
+         <string>更多</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+     <zorder>f_paragraph</zorder>
+     <zorder>f_undo</zorder>
+     <zorder>f_redo</zorder>
+     <zorder>f_cut</zorder>
+     <zorder>f_copy</zorder>
+     <zorder>f_paste</zorder>
+     <zorder>f_link</zorder>
+     <zorder>f_italic</zorder>
+     <zorder>f_underline</zorder>
+     <zorder>f_fontsize</zorder>
+     <zorder>f_list_bullet</zorder>
+     <zorder>f_list_ordered</zorder>
+     <zorder>f_indent_dec</zorder>
+     <zorder>f_indent_inc</zorder>
+     <zorder>f_bold</zorder>
+     <zorder>f_bgcolor</zorder>
+     <zorder>f_strikeout</zorder>
+     <zorder>f_image</zorder>
+     <zorder>f_menu</zorder>
+     <zorder>f_fgcolor</zorder>
+    </widget>
+   </item>
+   <item>
+    <widget class="MTextEdit" name="f_textedit">
+     <property name="autoFormatting">
+      <set>QTextEdit::AutoNone</set>
+     </property>
+     <property name="tabChangesFocus">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MTextEdit</class>
+   <extends>QTextEdit</extends>
+   <header>mtextedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>f_textedit</tabstop>
+  <tabstop>f_strikeout</tabstop>
+  <tabstop>f_image</tabstop>
+  <tabstop>f_menu</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
